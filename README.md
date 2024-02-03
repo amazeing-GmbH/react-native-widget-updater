@@ -1,8 +1,14 @@
 # react-native-widget-updater
 
-Get information about and trigger updates to your native widgets from React Native.
+Update widgets from JS.
 
 ## Installation
+
+```sh
+yarn add react-native-widget-updater
+```
+
+or
 
 ```sh
 npm install react-native-widget-updater
@@ -10,12 +16,36 @@ npm install react-native-widget-updater
 
 ## Usage
 
+### Updating widgets
+
+To update a widget from within `react`, call the `updateAppWidgets` function and pass the class names of your widgets.
+
 ```js
-import { multiply } from 'react-native-widget-updater';
+import { updateAppWidgets } from 'react-native-widget-updater';
 
-// ...
+// Pass the classes of the app widget
+const widgetClasses = ['.ExampleAppWidget'];
+await updateAppWidges(widgetClasses);
+```
 
-const result = await multiply(3, 7);
+### Gathering in use widgets
+
+To gather all in-use widgets from within `react`, call the `getAppWidgetIds` function and pass the class names of your widgets.
+
+```js
+import { getAppWidgetIds } from 'react-native-widget-updater';
+
+// Pass the classes of the app widget
+const widgetClasses = ['.ExampleAppWidget'];
+const result = await getAppWidgetIds(widgetClasses);
+```
+
+This will return a map of widget classes and the corresponding OS ids assigned, e.g. the `.ExampleAppWidget` currently has two instances on the home screen with the ids `18` and `19`.
+
+```js
+{
+    ".ExampleAppWidget": [18, 19]
+}
 ```
 
 ## Contributing
@@ -25,7 +55,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 ## License
 
 MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
