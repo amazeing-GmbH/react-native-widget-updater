@@ -12,6 +12,13 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		25AF71612B6EB49200703FCC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF71602B6EB49200703FCC /* WidgetKit.framework */; };
+		25AF71632B6EB49200703FCC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AF71622B6EB49200703FCC /* SwiftUI.framework */; };
+		25AF71662B6EB49200703FCC /* WidgetUpdaterExampleWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF71652B6EB49200703FCC /* WidgetUpdaterExampleWidgetBundle.swift */; };
+		25AF716A2B6EB49200703FCC /* WidgetUpdaterExampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF71692B6EB49200703FCC /* WidgetUpdaterExampleWidget.swift */; };
+		25AF716C2B6EB49200703FCC /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF716B2B6EB49200703FCC /* AppIntent.swift */; };
+		25AF716E2B6EB49300703FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AF716D2B6EB49300703FCC /* Assets.xcassets */; };
+		25AF71722B6EB49300703FCC /* WidgetUpdaterExampleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 25AF715F2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7699B88040F8A987B510C191 /* libPods-WidgetUpdaterExample-WidgetUpdaterExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-WidgetUpdaterExample-WidgetUpdaterExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +31,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = WidgetUpdaterExample;
 		};
+		25AF71702B6EB49300703FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25AF715E2B6EB49200703FCC;
+			remoteInfo = WidgetUpdaterExampleWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25AF71732B6EB49300703FCC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25AF71722B6EB49300703FCC /* WidgetUpdaterExampleWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* WidgetUpdaterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetUpdaterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +65,14 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WidgetUpdaterExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WidgetUpdaterExample/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-WidgetUpdaterExample-WidgetUpdaterExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WidgetUpdaterExample-WidgetUpdaterExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25AF715F2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetUpdaterExampleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25AF71602B6EB49200703FCC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		25AF71622B6EB49200703FCC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		25AF71652B6EB49200703FCC /* WidgetUpdaterExampleWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUpdaterExampleWidgetBundle.swift; sourceTree = "<group>"; };
+		25AF71692B6EB49200703FCC /* WidgetUpdaterExampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUpdaterExampleWidget.swift; sourceTree = "<group>"; };
+		25AF716B2B6EB49200703FCC /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		25AF716D2B6EB49300703FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25AF716F2B6EB49300703FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-WidgetUpdaterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetUpdaterExample.debug.xcconfig"; path = "Target Support Files/Pods-WidgetUpdaterExample/Pods-WidgetUpdaterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-WidgetUpdaterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetUpdaterExample.release.xcconfig"; path = "Target Support Files/Pods-WidgetUpdaterExample/Pods-WidgetUpdaterExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-WidgetUpdaterExample-WidgetUpdaterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetUpdaterExample-WidgetUpdaterExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-WidgetUpdaterExample-WidgetUpdaterExampleTests/Pods-WidgetUpdaterExample-WidgetUpdaterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +96,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-WidgetUpdaterExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25AF715C2B6EB49200703FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF71632B6EB49200703FCC /* SwiftUI.framework in Frameworks */,
+				25AF71612B6EB49200703FCC /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +141,26 @@
 			name = WidgetUpdaterExample;
 			sourceTree = "<group>";
 		};
+		25AF71642B6EB49200703FCC /* WidgetUpdaterExampleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				25AF71652B6EB49200703FCC /* WidgetUpdaterExampleWidgetBundle.swift */,
+				25AF71692B6EB49200703FCC /* WidgetUpdaterExampleWidget.swift */,
+				25AF716B2B6EB49200703FCC /* AppIntent.swift */,
+				25AF716D2B6EB49300703FCC /* Assets.xcassets */,
+				25AF716F2B6EB49300703FCC /* Info.plist */,
+			);
+			path = WidgetUpdaterExampleWidget;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-WidgetUpdaterExample.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-WidgetUpdaterExample-WidgetUpdaterExampleTests.a */,
+				25AF71602B6EB49200703FCC /* WidgetKit.framework */,
+				25AF71622B6EB49200703FCC /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +178,7 @@
 				13B07FAE1A68108700A75B9A /* WidgetUpdaterExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WidgetUpdaterExampleTests */,
+				25AF71642B6EB49200703FCC /* WidgetUpdaterExampleWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -133,6 +193,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* WidgetUpdaterExample.app */,
 				00E356EE1AD99517003FC87E /* WidgetUpdaterExampleTests.xctest */,
+				25AF715F2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,15 +244,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				25AF71732B6EB49300703FCC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25AF71712B6EB49300703FCC /* PBXTargetDependency */,
 			);
 			name = WidgetUpdaterExample;
 			productName = WidgetUpdaterExample;
 			productReference = 13B07F961A680F5B00A75B9A /* WidgetUpdaterExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25AF715E2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25AF71762B6EB49300703FCC /* Build configuration list for PBXNativeTarget "WidgetUpdaterExampleWidgetExtension" */;
+			buildPhases = (
+				25AF715B2B6EB49200703FCC /* Sources */,
+				25AF715C2B6EB49200703FCC /* Frameworks */,
+				25AF715D2B6EB49200703FCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetUpdaterExampleWidgetExtension;
+			productName = WidgetUpdaterExampleWidgetExtension;
+			productReference = 25AF715F2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,6 +279,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -207,6 +288,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					25AF715E2B6EB49200703FCC = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
@@ -225,6 +309,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* WidgetUpdaterExample */,
 				00E356ED1AD99517003FC87E /* WidgetUpdaterExampleTests */,
+				25AF715E2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +328,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25AF715D2B6EB49200703FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF716E2B6EB49300703FCC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +490,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25AF715B2B6EB49200703FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF71662B6EB49200703FCC /* WidgetUpdaterExampleWidgetBundle.swift in Sources */,
+				25AF716C2B6EB49200703FCC /* AppIntent.swift in Sources */,
+				25AF716A2B6EB49200703FCC /* WidgetUpdaterExampleWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -404,6 +507,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* WidgetUpdaterExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		25AF71712B6EB49300703FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25AF715E2B6EB49200703FCC /* WidgetUpdaterExampleWidgetExtension */;
+			targetProxy = 25AF71702B6EB49300703FCC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-WidgetUpdaterExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -490,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-WidgetUpdaterExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -508,6 +618,89 @@
 				PRODUCT_NAME = WidgetUpdaterExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		25AF71742B6EB49300703FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetUpdaterExampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetUpdaterExampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.WidgetUpdaterExample.WidgetUpdaterExampleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25AF71752B6EB49300703FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetUpdaterExampleWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetUpdaterExampleWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.WidgetUpdaterExample.WidgetUpdaterExampleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -544,7 +737,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -572,6 +765,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -579,7 +773,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -616,7 +813,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -636,6 +833,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -643,7 +841,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -665,6 +866,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25AF71762B6EB49300703FCC /* Build configuration list for PBXNativeTarget "WidgetUpdaterExampleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AF71742B6EB49300703FCC /* Debug */,
+				25AF71752B6EB49300703FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
