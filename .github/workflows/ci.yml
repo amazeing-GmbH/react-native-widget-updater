@@ -146,6 +146,11 @@ jobs:
         env:
           NO_FLIPPER: 1
 
+      - name: Remove faulty env file
+        run: |
+          ls -la example/ios/.xcode.env.local
+          rm -f example/ios/.xcode.env.local
+
       - name: Build example for iOS
         run: |
           yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}"
