@@ -148,8 +148,10 @@ jobs:
 
       - name: Remove faulty env file
         run: |
-          ls -la example/ios/.xcode.env.local
-          rm -f example/ios/.xcode.env.local
+          if [[ -f example/ios/.xcode.env.local ]]; then
+            cat example/ios/.xcode.env.local
+            rm -f example/ios/.xcode.env.local
+          fi
 
       - name: Build example for iOS
         run: |
