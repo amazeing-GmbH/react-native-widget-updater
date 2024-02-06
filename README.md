@@ -1,6 +1,6 @@
 # react-native-widget-updater
 
-Update widgets from JS.
+Update native home screen and lock screen widgets from JS.
 
 ## Installation
 
