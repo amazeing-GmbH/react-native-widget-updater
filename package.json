@@ -1,6 +1,6 @@
 {
   "name": "react-native-widget-updater",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Get information about native widgets and trigger updates from React Native.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
