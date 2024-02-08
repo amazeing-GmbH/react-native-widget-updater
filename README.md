@@ -2,6 +2,10 @@
 
 Update native home screen and lock screen widgets from JS.
 
+Imagine you want to display an updated entry in your native widget. This package provides the ability to trigger updates.
+
+![react-native-widget-updater](./assets/react-native-widget-updater.jpg)
+
 ## Installation
 
 ```sh
@@ -15,6 +19,21 @@ npm install react-native-widget-updater
 ```
 
 ## Usage
+
+For all the function calls, a widget class name or kind is required. On iOS this will be the `kind` variable defined in the `Widget` struct, essentially the name of the widget:
+
+```swift
+struct WidgetUpdaterExampleWidget: Widget {
+  let kind: String = "WidgetUpdaterExampleWidget"
+```
+
+On Android it's the class name which extends the `AppWidgetProvider` class:
+
+```kotlin
+class ExampleAppWidget : AppWidgetProvider()
+```
+
+This needs to prefixed with a dot and becomes `.ExampleAppWidget`.
 
 ### Updating widgets
 
